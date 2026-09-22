@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Liminal Forms, an interactive art appreciation gallery exploring texture, light, and movement.">
+  <title>Liminal Forms | Art Appreciation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Liminal Forms home"><span class="brand-mark">LF</span><span>Liminal<br>Forms</span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a class="active" href="#gallery">Gallery <span>01</span></a><a href="#about">About <span>02</span></a><a href="#notes">Notes <span>03</span></a></nav>
+    <button class="menu-button" type="button" aria-label="Open menu"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> Digital exhibition / 2026</p><h1 id="hero-title">Art is a<br><em>way of seeing.</em></h1><p class="hero-intro">An interactive study of the spaces between material, light, and feeling. Move through the collection slowly.</p><a class="circle-link" href="#gallery" aria-label="Explore the gallery"><span>Explore<br>the works</span><strong>↘</strong></a></div>
+      <div class="hero-art" aria-label="Interactive 3D sculpture, move your cursor across it" role="img"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="sculpture-wrap"><div class="sculpture sculpture-back"></div><div class="sculpture sculpture-front"></div><div class="sculpture highlight"></div></div><div class="art-caption"><span>01 / 04</span><span>Untitled tension, 2026</span></div></div>
+      <div class="hero-index">SCROLL TO REVEAL <span>↓</span></div>
+    </section>
+
+    <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-heading"><p class="eyebrow">The collection</p><h2 id="gallery-title">Look closer.</h2><p class="section-description">Four gestures in form, chosen for the questions they leave behind.</p></div>
+      <div class="art-grid">
+        <button class="art-card card-large selected" type="button" data-title="The weight of blue" data-artist="Mina Okafor" data-year="2024" data-medium="Oil, linen, 120 × 90 cm" data-description="A study of gravity disguised as color. Okafor lets the blue pool and gather until the canvas feels almost physical."><span class="card-number">01</span><span class="artwork artwork-blue"></span><span class="card-label">The weight of blue <small>M. Okafor</small></span></button>
+        <button class="art-card" type="button" data-title="Soft architecture" data-artist="Eli Varga" data-year="2023" data-medium="Plaster, pigment, 48 × 48 × 32 cm" data-description="A quiet object about the rooms we carry with us. Its surface changes as light moves over every shallow fold."><span class="card-number">02</span><span class="artwork artwork-sand"></span><span class="card-label">Soft architecture <small>E. Varga</small></span></button>
+        <button class="art-card" type="button" data-title="After the signal" data-artist="Nia Hwang" data-year="2025" data-medium="Acrylic, foil, 100 × 70 cm" data-description="A bright interruption. Hwang layers reflective fragments to make an image that only completes itself in motion."><span class="card-number">03</span><span class="artwork artwork-signal"></span><span class="card-label">After the signal <small>N. Hwang</small></span></button>
+        <button class="art-card card-wide" type="button" data-title="Field notes for a future body" data-artist="Sora Bell" data-year="2022" data-medium="Charcoal, graphite, paper, 70 × 100 cm" data-description="Marks become a record of attention. Bell's drawings feel less like images of bodies and more like their weather systems."><span class="card-number">04</span><span class="artwork artwork-notes"></span><span class="card-label">Field notes for a future body <small>S. Bell</small></span></button>
+      </div>
+      <aside class="work-detail" aria-live="polite"><div class="detail-index">SELECTED WORK <span>↗</span></div><div><p class="eyebrow" id="detail-artist">Mina Okafor · 2024</p><h3 id="detail-title">The weight of blue</h3><p id="detail-description">A study of gravity disguised as color. Okafor lets the blue pool and gather until the canvas feels almost physical.</p></div><p class="detail-medium" id="detail-medium">Oil, linen, 120 × 90 cm</p></aside>
+    </section>
+
+    <section class="manifesto" id="about"><p class="eyebrow">A note on looking</p><blockquote>“The work begins<br>where the image ends.”</blockquote><p class="manifesto-note">— John Berger, reimagined</p></section>
+  </main>
+  <footer class="site-footer" id="notes"><span>LF / 2026</span><span>Made for slow looking</span><a href="#top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
